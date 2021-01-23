@@ -3,3 +3,19 @@
 /* selected tag {
   property: value;
 } */
+
+h1{
+  color: blue;
+}
+
+li{
+  color: rgb(225,97,0);
+}
+
+p{
+  color: #0895a8;
+}
+
+h4 {
+  color: rgba(225,97,0,1)
+}
