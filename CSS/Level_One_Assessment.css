@@ -31,3 +31,8 @@ h3{
   border-style: solid;
   border-width: medium;
 }
+
+.lastPart{
+  background-color: blue;
+  border: 4px dashed yellow;
+}
