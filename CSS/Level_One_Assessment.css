@@ -19,3 +19,15 @@ h3{
   color: purple;
   text-decoration: overline;
 }
+
+.FirstText{
+  border-color: grey;
+  border-width: thick;
+}
+
+
+#login{
+  border-color: #950A21;
+  border-style: solid;
+  border-width: medium;
+}
