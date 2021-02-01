@@ -1,0 +1,9 @@
+body{
+  background: #C5E3E6;
+}
+
+h1{
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+}
