@@ -1,7 +1,15 @@
 h1 {
-  font-family: Arial;
+  font-family: Arial; /*changed the font*/
 }
 
 p{
   font-family: monospace;
+}
+
+body{
+  font-size: 20px; /*changed font size*/
+}
+
+#two{
+  font-size: 2.0em; /*1em=16px*/
 }
