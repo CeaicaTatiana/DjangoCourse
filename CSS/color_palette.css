@@ -3,6 +3,10 @@ h2{
   text-align: center;
 }
 
+.art{
+  margin:auto;
+}
+
 td{
   background-color: black;
   height:300px;
