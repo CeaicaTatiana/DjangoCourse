@@ -8,9 +8,9 @@ h2{
 }
 
 td{
-  background-color: black;
   height:300px;
   width: 150px;
+  border: 6px solid white; /*distance between columns*/
 }
 
 #one{
