@@ -4,5 +4,6 @@ body {
   background-color: #101736;
   text-align: center;
   border: 60px solid #a8e3df;
-
+  border-top: 0px; /*there will not be any top borders*/
+  margin: 0px; /* in this way margins are not visible*/
 }
