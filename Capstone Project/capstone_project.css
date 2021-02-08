@@ -2,4 +2,7 @@ body {
   font-family: 'Potta One', cursive;
   color: white;
   background-color: #101736;
+  text-align: center;
+  border: 60px solid #a8e3df;
+
 }
