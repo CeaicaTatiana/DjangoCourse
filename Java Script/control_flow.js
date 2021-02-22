@@ -1,9 +1,15 @@
 var hot = false;
-var temp = 100;
+var temp = 50;
 
+
+// if (temp>80){
+//   hot = true
+// }
+//
+// console.log(hot);
 
 if (temp>80){
-  hot = true
+  console.log("Hot Outside!");
+} else{
+  console.log("It's not very hot today!")
 }
-
-console.log(hot);
