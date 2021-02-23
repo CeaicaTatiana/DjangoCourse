@@ -8,16 +8,26 @@ var x = 0;
 //
 // }
 
-while (x < 5) {
-  console.log("x is currently" + x);
+// while (x < 5) {
+//   console.log("x is currently" + x);
+//
+//   if (x===3) {
+//     console.log("X IS EQUAL TO THREE");
+//     break;
+//   }
+//
+//   console.log("x is still less than 5, adding 1 to x");
+//
+//   x = x+1;
+//
+// }
 
-  if (x===3) {
-    console.log("X IS EQUAL TO THREE");
-    break;
+
+//Write a while loop that prints out only the even numbers from 1 to 10
+
+while (x <= 10) {
+  if (x % 2 === 0) {
+    console.log(x);
   }
-
-  console.log("x is still less than 5, adding 1 to x");
-
-  x = x+1;
-
+  x+=1;
 }
