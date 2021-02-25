@@ -20,3 +20,18 @@ function sleepIn(weekday,vacation){
 function monkeyTrouble(aSmile,bSmile){
   return (aSmile && bSmile) || (!aSmile && !bSmile)
 }
+
+// Given a string and a non-negative int n, return a larger string that is n copies of the original string.
+
+//stringTimes("Hi",2)-"HiHi"
+//stringTimes("Hi",3)-"HiHiHi"
+//stringTimes("Hi",1)-"Hi"
+
+function stringTimes(str,n) {
+  var returnstr="";
+  var i = 0;
+  while(i<n){
+    returnstr += str;
+    i++
+  }
+}
