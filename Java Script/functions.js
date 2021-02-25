@@ -20,3 +20,8 @@ function helloSomeone(name="Frank") {
 function formal (name="Sam", title="Sir"){
   return title + " " + name
 }
+
+function timesFive(numInput) {
+  var result = numInput * 5
+  return result
+}
