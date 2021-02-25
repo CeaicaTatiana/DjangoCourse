@@ -14,3 +14,9 @@ function addNum(num1,num2) {
 function helloSomeone(name="Frank") {
   console.log("Hello "+name);
 }
+
+//returning values
+
+function formal (name="Sam", title="Sir"){
+  return title + " " + name
+}
