@@ -39,3 +39,9 @@ if (petName[petName.length-1] === "y") {
 } else {
   petCond = false;
 }
+
+if (nameCond && ageCond && heightCond && petCond) {
+  console.log("Welcome Spy!");
+} else {
+  console.log("Nothing to see here!");
+}
