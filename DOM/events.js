@@ -18,3 +18,9 @@ headTwo.addEventListener("click",function(){
   headTwo.textContent = "Clicked On";
   headTwo.style.color = "blue";
 })
+
+//double click
+headThree.addEventListener("dblclick",function(){
+  headThree.textContent = "I WAS DOUBLE CLICKED!";
+  headThree.style.color = "red";
+})
