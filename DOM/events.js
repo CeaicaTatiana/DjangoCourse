@@ -11,3 +11,10 @@ headOne.addEventListener('mouseout',function(){
   headOne.textContent = "HOVER OVER ME";
   headOne.style.color = "black";
 })
+
+//On clicks
+
+headTwo.addEventListener("click",function(){
+  headTwo.textContent = "Clicked On";
+  headTwo.style.color = "blue";
+})
