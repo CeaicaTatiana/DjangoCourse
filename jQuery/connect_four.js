@@ -20,5 +20,17 @@ function changeColor(rowIndex,colIndex,color) {
 }
 
 function returnColor(rowIndex,colIndex) {
-  return table.eq(rowIndex).find('td').eq(colIndex).find('button').css('background-color'); 
+  return table.eq(rowIndex).find('td').eq(colIndex).find('button').css('background-color');
+}
+
+//take in the column index and return the button row that is still grey
+
+function checkButtom(colIndex){
+  var colorReport = returnColor(5,colIndex);
+  for (var row = 5; row > -1; row--) {
+    colReport = returnColor(row,colIndex);
+    if (colorReport === 'rgb(128,128,128)') {
+      return row
+    }
+  }
 }
