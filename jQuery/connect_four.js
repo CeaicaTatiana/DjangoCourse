@@ -12,3 +12,9 @@ function reportWin(rowNum,colNum) {
   console.log(rowNum);
   console.log(colNum);
 }
+
+//get a table cell by index using jquery
+
+function changeColor(rowIndex,colIndex,color) {
+  return table.eq(rowIndex).find('td').eq(colIndex).find('button').css('background-color', color); 
+}
