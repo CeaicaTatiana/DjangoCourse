@@ -34,3 +34,7 @@ function checkButtom(colIndex){
     }
   }
 }
+
+function colorMatchCheck(one,two,three,four) {
+  return (one === two && one === three && one === four and one !== 'rgb(128,128,128)' && one !== undefined);
+}
