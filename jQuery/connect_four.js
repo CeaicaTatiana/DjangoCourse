@@ -38,3 +38,19 @@ function checkButtom(colIndex){
 function colorMatchCheck(one,two,three,four) {
   return (one === two && one === three && one === four and one !== 'rgb(128,128,128)' && one !== undefined);
 }
+
+//check for horizontal wins
+
+function horizontalWinCheck() {
+  for (var row = 0; row < 6; row++) {
+    for (var col = 0; col < 4; col++) {
+      if (colorMatchCheck(returnColor(row,col), returnColor(row,col+1), returnColor(row,col+2), returnColor(row,col+3), returnColor(row,col+4))) {
+        console.log('horiz');
+        reportWin(row,col);
+        return true;
+      }else {
+        continue;
+      }
+    }
+  }
+}
