@@ -16,5 +16,9 @@ function reportWin(rowNum,colNum) {
 //get a table cell by index using jquery
 
 function changeColor(rowIndex,colIndex,color) {
-  return table.eq(rowIndex).find('td').eq(colIndex).find('button').css('background-color', color); 
+  return table.eq(rowIndex).find('td').eq(colIndex).find('button').css('background-color', color);
+}
+
+function returnColor(rowIndex,colIndex) {
+  return table.eq(rowIndex).find('td').eq(colIndex).find('button').css('background-color'); 
 }
