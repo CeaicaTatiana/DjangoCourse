@@ -54,3 +54,21 @@ function horizontalWinCheck() {
     }
   }
 }
+
+
+//check for vertical wins
+
+
+function horizontalWinCheck() {
+  for (var col = 0; row < 7; row++) {
+    for (var row = 0; row < 3; col++) {
+      if (colorMatchCheck(returnColor(row,col), returnColor(row,col+1), returnColor(row,col+2), returnColor(row,col+3), returnColor(row,col+4))) {
+        console.log('vertical');
+        reportWin(row,col);
+        return true;
+      }else {
+        continue;
+      }
+    }
+  }
+}
