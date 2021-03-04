@@ -23,8 +23,6 @@ function changeMarker() {
     this.textContent = '';
   }
 }
-
-
 //For loop to add event listeners to all the squeres
 
 for (var i = 0; i < squares.length; i++) {
