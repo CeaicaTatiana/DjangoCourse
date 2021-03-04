@@ -91,3 +91,19 @@ function verticalWinCheck() {
     }
   }
 }
+
+//game logic
+
+var currentPlayer = 1;
+var currentName = player1;
+var currentColor = player1Color;
+
+
+$('h3').text(player1+" it is your turn, pick a column to drop in! ")
+
+$('.board button').on('click', function(){
+  var col = $(this).closest('td').index();
+  var bottomAvail = checkBottom(col);
+
+  changeColor(bottomAvail,col,currentColor);
+})
