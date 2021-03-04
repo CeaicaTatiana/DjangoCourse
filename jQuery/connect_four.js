@@ -59,14 +59,33 @@ function horizontalWinCheck() {
 //check for vertical wins
 
 
-function horizontalWinCheck() {
-  for (var col = 0; row < 7; row++) {
-    for (var row = 0; row < 3; col++) {
+function verticalWinCheck() {
+  for (var col = 0; col < 7; col++) {
+    for (var row = 0; row < 3; row++) {
       if (colorMatchCheck(returnColor(row,col), returnColor(row,col+1), returnColor(row,col+2), returnColor(row,col+3), returnColor(row,col+4))) {
         console.log('vertical');
         reportWin(row,col);
         return true;
       }else {
+        continue;
+      }
+    }
+  }
+}
+
+//check diagonal wins
+function verticalWinCheck() {
+  for (var col = 0; col < 5; col++) {
+    for (var row = 0; row < 3; row++) {
+      if (colorMatchCheck(returnColor(row,col), returnColor(row+1,col+1), returnColor(row+2,col+2), returnColor(row+3,col+3), returnColor(row+4,col+4))) {
+        console.log('diag');
+        reportWin(row,col);
+        return true;
+      }else if (colorMatchCheck(returnColor(row,col), returnColor(row-1,col+1), returnColor(row-2,col+2), returnColor(row-3,col+3), returnColor(row-4,col+4))) {
+        console.log('diag');
+        reportWin(row,col);
+        return true;
+      }else{
         continue;
       }
     }
