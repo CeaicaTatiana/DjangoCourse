@@ -14,5 +14,13 @@ function clearBoard() {
 restart.addEventListener('click',clearBoard);
 //Check the square marker
 
-
+function changeMarker() {
+  if (this.textContent === '') {
+    this.textContent = 'X';
+  }else if (this.textContent === 'X') {
+    this.textContent = 'O';
+  }else {
+    this.textContent = '';
+  }
+}
 //For loop to add event listeners to all the squeres
