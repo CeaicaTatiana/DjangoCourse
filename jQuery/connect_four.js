@@ -113,4 +113,16 @@ $('.board button').on('click', function(){
     $('h3').fadeOut('fast');
     $('h2').fadeOut('fast');
   }
+
+  currentPlayer = currentPlayer * -1;
+
+  if (currentPlayer === 1) {
+    currentName = player1;
+    $('h3').text(currentName+" it is your turn!");
+    currentColor = player1Color;
+  } else{
+    currentName = player2;
+    $('h3').text(currentName+" it is your turn!");
+    currentColor = player2Color;
+  }
 })
