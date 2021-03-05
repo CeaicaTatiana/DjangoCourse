@@ -36,7 +36,7 @@ function checkButtom(colIndex){
 }
 
 function colorMatchCheck(one,two,three,four) {
-  return (one === two && one === three && one === four and one !== 'rgb(128,128,128)' && one !== undefined);
+  return (one === two && one === three && one === four && one !== 'rgb(128,128,128)' && one !== undefined)
 }
 
 //check for horizontal wins
@@ -74,7 +74,7 @@ function verticalWinCheck() {
 }
 
 //check diagonal wins
-function verticalWinCheck() {
+function diagonalWinCheck() {
   for (var col = 0; col < 5; col++) {
     for (var row = 0; row < 3; row++) {
       if (colorMatchCheck(returnColor(row,col), returnColor(row+1,col+1), returnColor(row+2,col+2), returnColor(row+3,col+3), returnColor(row+4,col+4))) {
@@ -93,17 +93,24 @@ function verticalWinCheck() {
 }
 
 //game logic
+//start with player 1
 
 var currentPlayer = 1;
 var currentName = player1;
 var currentColor = player1Color;
 
 
-$('h3').text(player1+" it is your turn, pick a column to drop in! ")
+$('h3').text(player1+" it is your turn, pick a column to drop in! ");
 
 $('.board button').on('click', function(){
   var col = $(this).closest('td').index();
   var bottomAvail = checkBottom(col);
 
   changeColor(bottomAvail,col,currentColor);
+
+  if (horizontalWinCheck()|| verticalWinCheck() || diagonalWinCheck()) {
+    $('h1').text(currentName+"You have won!")
+    $('h3').fadeOut('fast');
+    $('h2').fadeOut('fast');
+  }
 })
